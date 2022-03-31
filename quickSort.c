@@ -32,18 +32,34 @@ void quickSort(int *arr, int first,int last){
 }
 int main(int argc, char* argv[]){
     int i;
-    if(argc<2){
-        printf("\nNo arguments");
+    if(argc!=2){
+        printf("\nUnsuspected arguments");
         return 1;
     }
-    int m =argc-1;
-    int array[m];
-    for(i=0;i<m;i++){
-        array[i]=atoi(argv[i+1]);
+    int ch;
+    FILE *file;
+    int length=0;
+    if((file=fopen(argv[1],"r"))==NULL){
+        printf("\nCan`t open the file");
+        return 2;
     }
-    quickSort(array,0,m-1);
+    fseek(file,0,SEEK_SET); 
+
+    while((ch=getc(file))!=EOF){
+        length++;
+    }
+    fseek(file,0,SEEK_SET); 
+
+    int* array=(int*)malloc(sizeof(int)*length);
+
+    for(i=0;i<length;i++){
+        fscanf(file, "%d",&array[i]);
+    }
+
+    quickSort(array,0,length-1);
+
     printf("Sorted elements: ");
-    for(i=0;i<m;i++){
+    for(i=0;i<length;i++){
         printf(" %d",array[i]);
     }
     printf("\n");
