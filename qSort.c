@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+//#define RAND_MAX 32767
 
 void quickSort(int *arr, int first, int last)
 {
@@ -54,7 +55,7 @@ int main(int argc, char *argv[])
 
     for (i = 0; i < length; i++)
     {
-        array[i] = rand()%100;
+        array[i] = rand()%RAND_MAX;
     }
 
     /*printf("\nUnsorted elements: ");
@@ -70,7 +71,7 @@ int main(int argc, char *argv[])
     for (i = 0; i < length; i++)
     {
         printf("%d ", array[i]);
-    }*/
+    }
     /*printf("Array length: %d",length);*/
     printf("Sort time: %f\n",(double)time_end/CLOCKS_PER_SEC);
     return 0;
