@@ -20,7 +20,7 @@ void quickSort(int *arr, int first, int last)
             }
             while (arr[j] > arr[pivot])
             {
-                i--;
+                j--;
             }
             if (i < j)
             {
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     while (length < 1)
     {
         printf("\nIncorrect length. Try again:");
-        scanf("%d", &length);
+        scanf("%d ", &length);
     }
     int *array = (int *)malloc(length * sizeof(int));
 
@@ -57,20 +57,21 @@ int main(int argc, char *argv[])
         array[i] = rand()%100;
     }
 
-    printf("\nUnsorted elements: ");
+    /*printf("\nUnsorted elements: ");
 
     for (i = 0; i < length; i++)
     {
-        printf("%d", array[i]);
-    }
+        printf("%d ", array[i]);
+    }*/
     clock_t time_start =clock();
     quickSort(array, 0, length - 1);
     clock_t time_end = clock()-time_start;
-    printf("\nSorted elements: ");
+    /*printf("\nSorted elements: ");
     for (i = 0; i < length; i++)
     {
-        printf("%d", array[i]);
-    }
-    printf("\nSort time: %f",(double)time_end/CLOCKS_PER_SEC);
+        printf("%d ", array[i]);
+    }*/
+    /*printf("Array length: %d",length);*/
+    printf("Sort time: %f\n",(double)time_end/CLOCKS_PER_SEC);
     return 0;
 }

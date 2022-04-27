@@ -14,7 +14,7 @@ void quickSort(int *arr, int first,int last){
                 i++;
             }
             while(arr[j]>arr[pivot]){
-                i--;
+                j--;
             }
             if(i<j){
                 temp=arr[i];

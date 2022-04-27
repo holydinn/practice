@@ -45,12 +45,13 @@ int main(int argc, char *argv[])
     }
     int length =argc-1;
     int *array = (int *)malloc(length * sizeof(int));
-    for(i=0;i<m;i++){
+    for(i=0;i<length;i++){
         array[i]=atoi(argv[i+1]);
     }
     clock_t time_start =clock();
     quickSort(array, 0, length - 1);
     clock_t time_end = clock()-time_start;
+    
     printf("\nSorted elements: ");
     for (i = 0; i < length; i++)
     {
