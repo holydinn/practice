@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-//#define RAND_MAX 32767
+#define RAND_MAX 32767
 
 void quickSort(int *arr, int first, int last)
 {
