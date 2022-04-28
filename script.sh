@@ -28,4 +28,11 @@ do
 	./qSort 10000000
 done
 wait 
+echo " "
+echo "Array length: 100000000 "
+for i in {1..10}
+do
+	./qSort 100000000
+done
+wait 
 echo Finished 

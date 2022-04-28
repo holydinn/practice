@@ -1,0 +1,48 @@
+Array length: 10000 
+Sort time: 0.001825
+Sort time: 0.001838
+Sort time: 0.001787
+Sort time: 0.001773
+Sort time: 0.001803
+Sort time: 0.001857
+Sort time: 0.002049
+Sort time: 0.002049
+Sort time: 0.002042
+Sort time: 0.002153
+ 
+Array length: 100000 
+Sort time: 0.031149
+Sort time: 0.030999
+Sort time: 0.035266
+Sort time: 0.026524
+Sort time: 0.020488
+Sort time: 0.020301
+Sort time: 0.023330
+Sort time: 0.027726
+Sort time: 0.024364
+Sort time: 0.022142
+ 
+Array length: 1000000 
+Sort time: 0.378888
+Sort time: 0.281129
+Sort time: 0.348795
+Sort time: 0.282571
+Sort time: 0.351570
+Sort time: 0.272489
+Sort time: 0.303016
+Sort time: 0.344214
+Sort time: 0.330817
+Sort time: 0.361390
+ 
+Array length: 10000000 
+Sort time: 9.102392
+Sort time: 8.974486
+Sort time: 8.748966
+Sort time: 8.647119
+Sort time: 9.579083
+Sort time: 8.562179
+Sort time: 8.323317
+Sort time: 8.620537
+Sort time: 8.606745
+Sort time: 8.529606
+Finished
