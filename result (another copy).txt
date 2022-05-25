@@ -1,0 +1,64 @@
+diana@diana-VirtualBox:~/Documents/practice$ ./script1.sh
+make: 'qSort1' is up to date.
+ 
+Array length : 10000 
+Sort time: 0.001752
+Sort time: 0.001831
+Sort time: 0.001871
+Sort time: 0.001813
+Sort time: 0.001876
+Sort time: 0.001836
+Sort time: 0.001790
+Sort time: 0.001866
+Sort time: 0.001761
+Sort time: 0.001748
+ 
+Array length: 100000 
+Sort time: 0.022561
+Sort time: 0.022102
+Sort time: 0.023073
+Sort time: 0.022132
+Sort time: 0.022312
+Sort time: 0.022309
+Sort time: 0.022161
+Sort time: 0.022352
+Sort time: 0.022472
+Sort time: 0.022623
+ 
+Array length: 1000000 
+Sort time: 0.262943
+Sort time: 0.261645
+Sort time: 0.262278
+Sort time: 0.261953
+Sort time: 0.261240
+Sort time: 0.267721
+Sort time: 0.270126
+Sort time: 0.267775
+Sort time: 0.278537
+Sort time: 0.269674
+ 
+Array length: 10000000 
+Sort time: 3.211605
+Sort time: 3.174294
+Sort time: 3.139968
+Sort time: 3.087892
+Sort time: 3.083282
+Sort time: 3.124220
+Sort time: 3.070561
+Sort time: 3.124983
+Sort time: 3.092666
+Sort time: 3.066687
+ 
+Array length: 100000000 
+Sort time: 43.093132
+Sort time: 43.140511
+Sort time: 47.233992
+Sort time: 40.391919
+Sort time: 40.548855
+Sort time: 40.502013
+Sort time: 40.933130
+Sort time: 39.894979
+Sort time: 40.456430
+Sort time: 40.412069
+Finished
+

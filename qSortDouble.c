@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#define RAND_MAX 32767
+#define RAND_MAX 2147483647
 
-void quickSort(int *arr, int first, int last)
+void quickSort(double *arr, double first, double last)
 {
-    int i, j, pivot, temp;
+    int i, j, pivot;
+    double temp;
 
     if (first < last)
     {
@@ -51,7 +52,7 @@ int main(int argc, char *argv[])
         printf("\nIncorrect length. Try again:");
         scanf("%d ", &length);
     }
-    int *array = (int *)malloc(length * sizeof(int));
+    double *array = (double *)malloc(length * sizeof(double));
 
     for (i = 0; i < length; i++)
     {
@@ -74,5 +75,6 @@ int main(int argc, char *argv[])
     }
     /*printf("Array length: %d",length);*/
     printf("Sort time: %f\n",(double)time_end/CLOCKS_PER_SEC);
+    free(array);
     return 0;
 }
