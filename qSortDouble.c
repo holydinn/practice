@@ -4,7 +4,7 @@
 #include <time.h>
 #define RAND_MAX 2147483647
 
-void quickSort(double *arr, double first, double last)
+void quickSort(double *arr, int first, int last)
 {
     int i, j, pivot;
     double temp;
@@ -56,24 +56,13 @@ int main(int argc, char *argv[])
 
     for (i = 0; i < length; i++)
     {
-        array[i] = rand()%RAND_MAX;
+        array[i] = ((double)rand())%RAND_MAX;
     }
 
-    /*printf("\nUnsorted elements: ");
-
-    for (i = 0; i < length; i++)
-    {
-        printf("%d ", array[i]);
-    }*/
     clock_t time_start =clock();
     quickSort(array, 0, length - 1);
     clock_t time_end = clock()-time_start;
-    /*printf("\nSorted elements: ");
-    for (i = 0; i < length; i++)
-    {
-        printf("%d ", array[i]);
-    }
-    /*printf("Array length: %d",length);*/
+    
     printf("Sort time: %f\n",(double)time_end/CLOCKS_PER_SEC);
     free(array);
     return 0;
