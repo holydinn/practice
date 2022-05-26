@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#define RAND_MAX 2147483647
+//#define RAND_MAX 32767
+const int RMAX = 32767;
 
 void quickSort(double *arr, int first, int last)
 {
@@ -56,7 +57,7 @@ int main(int argc, char *argv[])
 
     for (i = 0; i < length; i++)
     {
-        array[i] = ((double)rand())%RAND_MAX;
+        array[i] = ((double)rand()*RMAX)/(double)RAND_MAX;
     }
 
     clock_t time_start =clock();
