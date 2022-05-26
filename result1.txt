@@ -1,0 +1,63 @@
+diana@diana-VirtualBox:~/Documents/practice$ ./script1.sh
+gcc qSort.c -O1 -o qSort1
+qSort.c: In function ‘main’:
+qSort.c:52:9: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   52 |         scanf("%d", &length);
+      |         ^~~~~~~~~~~~~~~~~~~~
+ 
+Array length : 10000 
+Sort time: 0.001739
+Sort time: 0.001747
+Sort time: 0.001721
+Sort time: 0.001710
+Sort time: 0.001633
+Sort time: 0.001581
+Sort time: 0.001735
+Sort time: 0.001715
+Sort time: 0.001693
+Sort time: 0.001733
+ 
+Array length: 100000 
+Sort time: 0.019990
+Sort time: 0.018463
+Sort time: 0.019144
+Sort time: 0.019534
+Sort time: 0.019595
+Sort time: 0.019284
+Sort time: 0.019507
+Sort time: 0.019591
+Sort time: 0.018523
+Sort time: 0.012781
+ 
+Array length: 1000000 
+Sort time: 0.190495
+Sort time: 0.161803
+Sort time: 0.136425
+Sort time: 0.150446
+Sort time: 0.131168
+Sort time: 0.167193
+Sort time: 0.146365
+Sort time: 0.169811
+Sort time: 0.135096
+Sort time: 0.150617
+ 
+Array length: 10000000 
+Sort time: 2.929217
+Sort time: 3.017899
+Sort time: 2.909143
+Sort time: 2.923733
+Sort time: 2.791730
+Sort time: 2.865762
+Sort time: 2.671252
+Sort time: 2.920574
+Sort time: 2.815694
+Sort time: 2.781289
+ 
+Array length: 100000000 
+Sort time: 126.725203
+Sort time: 120.372588
+Sort time: 132.531793
+Sort time: 136.570438
+Sort time: 138.065841
+^C
+
