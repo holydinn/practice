@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
     while (length < 1)
     {
         printf("\nIncorrect length. Try again:");
-        scanf("%d ", &length);
+        scanf("%d", &length);
     }
     int *array = (int *)malloc(length * sizeof(int));
 

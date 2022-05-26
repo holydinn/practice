@@ -3,11 +3,11 @@
 #include <string.h>
 #include <time.h>
 //#define RAND_MAX 32767
-const int RMAX = 32767;
+const long int RMAX = 32767;
 
-void quickSort(double *arr, int first, int last)
+void quickSort(double *arr, long int first, long int last)
 {
-    int i, j, pivot;
+    long int i, j, pivot;
     double temp;
 
     if (first < last)
@@ -41,23 +41,23 @@ void quickSort(double *arr, int first, int last)
 }
 int main(int argc, char *argv[])
 {
-    int i;
+    long int i;
     if (argc != 2)
     {
         printf("\nUnsuspected arguments");
         return 1;
     }
-    int length = atoi(argv[1]);
+    long int length = atoi(argv[1]);
     while (length < 1)
     {
         printf("\nIncorrect length. Try again:");
-        scanf("%d ", &length);
+        scanf("%ld ", &length);
     }
     double *array = (double *)malloc(length * sizeof(double));
 
     for (i = 0; i < length; i++)
     {
-        array[i] = ((double)rand()*RMAX)/(double)RAND_MAX;
+        array[i] = (double)rand() / RAND_MAX * RMAX;
     }
 
     clock_t time_start =clock();
