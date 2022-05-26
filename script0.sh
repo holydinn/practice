@@ -1,38 +1,38 @@
 #!/bin/bash
-make qSort4
+make qSort0
 echo " "
 echo "Array length : 10000 "
 for i in {1..10}
 do
-	./qSort4 10000
+	./qSort0 10000
 done
 wait 
 echo " "
 echo "Array length: 100000 "
 for i in {1..10}
 do
-	./qSort4 100000
+	./qSort0 100000
 done
 wait 
 echo " "
 echo "Array length: 1000000 "
 for i in {1..10}
 do
-	./qSort4 1000000
+	./qSort0 1000000
 done
 wait 
 echo " "
 echo "Array length: 10000000 "
 for i in {1..10}
 do
-	./qSort4 10000000
+	./qSort0 10000000
 done
 wait 
 echo " "
 echo "Array length: 100000000 "
 for i in {1..10}
 do
-	./qSort4 100000000
+	./qSort0 100000000
 done
 wait 
 echo Finished 

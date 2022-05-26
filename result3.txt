@@ -1,0 +1,123 @@
+diana@diana-VirtualBox:~/Documents/practice$ ./scriptInt.sh
+gcc qSortInt.c -O3 -o qSortInt 
+qSortInt.c: In function ‘main’:
+qSortInt.c:52:9: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   52 |         scanf("%d ", &length);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+ 
+Array length : 10000 
+Sort time: 0.001517
+Sort time: 0.001481
+Sort time: 0.001674
+Sort time: 0.001631
+Sort time: 0.001789
+Sort time: 0.001499
+Sort time: 0.001648
+Sort time: 0.001899
+Sort time: 0.001644
+Sort time: 0.001510
+ 
+Array length: 100000 
+Sort time: 0.018909
+Sort time: 0.018378
+Sort time: 0.017874
+Sort time: 0.018396
+Sort time: 0.015884
+Sort time: 0.011811
+Sort time: 0.013772
+Sort time: 0.014256
+Sort time: 0.013484
+Sort time: 0.013237
+ 
+Array length: 1000000 
+Sort time: 0.146912
+Sort time: 0.162264
+Sort time: 0.187696
+Sort time: 0.159075
+Sort time: 0.210195
+Sort time: 0.180047
+Sort time: 0.171063
+Sort time: 0.169667
+Sort time: 0.165149
+Sort time: 0.156486
+ 
+Array length: 10000000 
+Sort time: 3.279172
+Sort time: 2.959614
+Sort time: 3.117227
+Sort time: 3.214046
+Sort time: 3.622196
+Sort time: 3.037256
+Sort time: 3.332324
+Sort time: 3.209820
+Sort time: 3.208892
+Sort time: 3.174588
+ 
+Array length: 100000000 
+Sort time: 197.848040
+Sort time: 210.243591
+Sort time: 204.003747
+Sort time: 177.160248
+Sort time: 177.149047
+Sort time: 184.708974diana@diana-VirtualBox:~/Documents/practice$ ./scriptInt.sh
+gcc qSortInt.c -O3 -o qSortInt 
+qSortInt.c: In function ‘main’:
+qSortInt.c:52:9: warning: ignoring return value of ‘scanf’, declared with attribute warn_unused_result [-Wunused-result]
+   52 |         scanf("%d ", &length);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+ 
+Array length : 10000 
+Sort time: 0.001517
+Sort time: 0.001481
+Sort time: 0.001674
+Sort time: 0.001631
+Sort time: 0.001789
+Sort time: 0.001499
+Sort time: 0.001648
+Sort time: 0.001899
+Sort time: 0.001644
+Sort time: 0.001510
+ 
+Array length: 100000 
+Sort time: 0.018909
+Sort time: 0.018378
+Sort time: 0.017874
+Sort time: 0.018396
+Sort time: 0.015884
+Sort time: 0.011811
+Sort time: 0.013772
+Sort time: 0.014256
+Sort time: 0.013484
+Sort time: 0.013237
+ 
+Array length: 1000000 
+Sort time: 0.146912
+Sort time: 0.162264
+Sort time: 0.187696
+Sort time: 0.159075
+Sort time: 0.210195
+Sort time: 0.180047
+Sort time: 0.171063
+Sort time: 0.169667
+Sort time: 0.165149
+Sort time: 0.156486
+ 
+Array length: 10000000 
+Sort time: 3.279172
+Sort time: 2.959614
+Sort time: 3.117227
+Sort time: 3.214046
+Sort time: 3.622196
+Sort time: 3.037256
+Sort time: 3.332324
+Sort time: 3.209820
+Sort time: 3.208892
+Sort time: 3.174588
+ 
+Array length: 100000000 
+Sort time: 197.848040
+Sort time: 210.243591
+Sort time: 204.003747
+Sort time: 177.160248
+Sort time: 177.149047
+Sort time: 184.708974
